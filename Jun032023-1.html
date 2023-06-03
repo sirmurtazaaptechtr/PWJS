@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="head1"></h1>
+    
+    <script>
+        console.log("This is a dummy log.");
+        console.warn("This is a dummy Warning!.");
+        console.error("This is a dummy Error!.");
+
+        alert("This is Alet!");
+        var x = confirm("Do you want to continue?");
+        var y = prompt("Enter your Full Name");
+
+        document.write(x,y);
+        console.log(x,y);
+        alert(x+" "+y);
+        document.getElementById('head1').innerText = x+" "+y;
+                
+    </script>
+</body>
+</html>
