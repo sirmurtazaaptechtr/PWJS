@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    <button onclick="window.print()">Print</button>
+    <h1>Welcome to my Website</h1>
+    <h2 id="myH"></h2>
+    <h2 id="myR"></h2>
+    <p id="myP"></p>
+    <script>
+        let x = 5;      // Declare x, give it the value of 5
+        let y = x + 2;  // Declare y, give it the value of x + 2        
+        /*
+            The code below will change
+            the heading with id = "myH"
+            and the paragraph with id = "myP"
+            in my web page:
+        */
+        // Change heading:
+        document.getElementById("myH").innerHTML = "My First Page";        
+        // Change paragraph:
+        document.getElementById("myP").innerHTML = "My first paragraph.";
+        x = 5;
+        y = 6;
+        z = x + y;        
+        console.log(z);
+        document.write(z);
+        document.getElementById("myR").innerText = "Result is = " + z;
+        document.getElementById("myR").innerHTML += `<br>Result is = ${z}`;
+    </script>   
+</body>
+</html>
