@@ -110,6 +110,23 @@ let msg ='';
 // }
 
 //Conditional (Ternary) Operator ' ? : '
-msg = age >= 18 ? `You can apply for DL`: msg = `You come after ${(18-age)*12} Months`;
-
+msg = age >= 18 ? `You can apply for DL`: `You come after ${(18-age)*12} Months`;
 console.log(msg);
+
+let flag = null;
+let num = 15;
+// flag = num % 2 == 0 ? 1 : 0;
+// flag = num % 2 == 0 ? true : false;
+flag = num % 2 == 0 ? `${num} is even` : `${num} is odd`;
+console.log(`flag = ${flag}`);
+
+//Conditional "null coalescing" operator "??"
+let datafromDB = ["Reading","Swiming"];
+// datafromDB = null;
+let datainsystem = datafromDB??[];
+
+console.log(datainsystem);
+document.getElementById('d1').innerHTML = '<h4>Hobbies : </h4>';     
+datainsystem.forEach(function(hobies) {
+    document.getElementById('myList').innerHTML += `<li>${hobies}</li>`;        
+});
