@@ -16,6 +16,7 @@ function add2Nums(num1,num2){
 
 const myFun = function(name){
     console.log(`Dear ${name}, how are you?`);
+    return `Message delivered to ${name}`;
 }
 
 const myFun2 = (name) => {
@@ -40,3 +41,9 @@ showName();
 console.log(add2Nums(1,2));
 myFun("Ayesha");
 myFun2("Huzaifa");
+
+let data4mfun = add2Nums(22,75);
+console.log(data4mfun);
+
+data4mfun = myFun("Ali Raza");
+console.log(data4mfun);
