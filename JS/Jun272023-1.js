@@ -70,3 +70,9 @@ let month = 2;
 let monthStr = month.toString();
 let paddedMonth = monthStr.padStart(2,"*");
 console.log(paddedMonth);
+
+let nameArr = myName.split(" ");
+
+console.log(`First Name = ${nameArr[0]}`);
+console.log(`Middle Name = ${nameArr[1]}`);
+console.log(`Last Name = ${nameArr[2]}`);
