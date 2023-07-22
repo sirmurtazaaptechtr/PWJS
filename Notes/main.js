@@ -3,11 +3,11 @@ console.log("Welcome to notes app. This is app.js");
 showNotes();
 
 // If user adds a note, add it to the localStorage
-let addBtn = document.getElementById("addBtn");
-addBtn.addEventListener("click", function(e) {
-  let addTxt = document.getElementById("addTxt");
-  let noteTitle = document.getElementById("noteTitle");
-  let priority = document.getElementsByName("priority");
+const addBtn = document.getElementById("addBtn");
+const addTxt = document.getElementById("addTxt");
+const noteTitle = document.getElementById("noteTitle");
+const priority = document.getElementsByName("priority");
+addBtn.addEventListener("click", function() {
   let pValue;
   for (i = 0; i < priority.length; i++) {
     if (priority[i].checked){
